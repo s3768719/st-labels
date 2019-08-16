@@ -1,0 +1,67 @@
+html {
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align: center;
+}
+
+h1 {
+}
+
+button {
+	border-radius: 5px;
+	width: 90px;
+	height: 30px;
+	font-weight:bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	transition: .5s;
+}
+
+button:hover {
+	background-color: darkgray;
+}
+
+select {
+	width: 10ex;
+}
+
+.box {
+	font-size: 10px;
+	border-style: solid;
+	padding:10px;
+	border-width: medium;
+	width:200px;
+	height: 200px;
+	float: left;
+	display: none;
+}
+
+@media print {
+	.heading {
+		display: none;
+	}
+	
+	p {
+		display: none;
+	}
+	
+	select {
+		display: none;
+	}
+	
+	button {
+		
+		display: none;
+	}
+	
+	.box {
+		display: block;
+		font-size: 18px;
+		border-style: solid;
+		padding:50px;
+		border-width: medium;
+		width:570px;
+		height: 300px;
+		float: none;
+		page-break-after: always;
+	}
+}
