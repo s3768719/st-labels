@@ -4,6 +4,7 @@ html {
 }
 
 h1 {
+	
 }
 
 button {
@@ -22,6 +23,31 @@ button:hover {
 
 select {
 	width: 10ex;
+}
+
+.full-width {
+	min-width: 100%;
+	display: block;
+}
+
+.third-width {
+	margin: 5px;
+	padding: 5px;
+	border-style: solid;
+	min-width: 100px;
+	max-width: 33%;
+	display: inline-block;
+	border-width:thin;
+	border-radius: 5px;
+}
+
+.smallButton {
+	border-radius: 3px;
+	width: 20px;
+	height: 20px;
+	font-weight: 100;
+	padding: 0;
+	transition: .5s;
 }
 
 .box {

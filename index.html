@@ -9,16 +9,28 @@
 			<button onclick="addLabel('prm')">PRM</button>
 			<button onclick="addLabel('exp')">EXP</button>
 			<button onclick="addLabel('mix')">MIX</button>
-			<button onclick="printPage()">Print</button>
-			<button value="Refresh Page" onClick="window.location.reload();">Refresh</button>
 		</div>
-		<div>
-			<p>PRM</p>
-			<p id="prmC">0</p>
-			<p>EXP</p>
-			<p id="expC">0</p>
-			<p>MIX</p>
-			<p id="mixC">0</p>
+		<div class="full-width">
+			<div class="third-width">
+				<p>PRM</p>
+				<button class="smallButton" onclick="up('prm')">+</button>
+				<p id="prmC">0</p>
+				<button class="smallButton" onclick="down('prm')">-</button>
+			</div>
+			<div class="third-width">
+				<p>EXP</p>
+				<button class="smallButton" onclick="up('exp')">+</button>
+				<p id="expC">0</p>
+				<button class="smallButton" onclick="down('exp')">-</button>
+			</div>
+			<div class="third-width">
+				<p>MIX</p>
+				<button class="smallButton" onclick="up('mix')">+</button>
+				<p id="mixC">0</p>
+				<button class="smallButton" onclick="down('mix')">-</button>
+			</div>
 		</div>
+		<button onclick="printPage()">Print</button>
+		<button value="Refresh Page" onClick="window.location.reload();">Refresh</button>
 	</body>
 </html>
