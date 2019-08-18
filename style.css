@@ -62,6 +62,14 @@ select {
 }
 
 @media print {
+	.full-width {
+		display: none;
+	}
+	
+	.third-width {
+		display: none;
+		
+	}
 	.heading {
 		display: none;
 	}
