@@ -106,6 +106,12 @@ function down(label) {
 	}
 }
 
+function resetCount() {
+	document.getElementById("prmC").innerHTML = 0;
+	document.getElementById("expC").innerHTML = 0;
+	document.getElementById("mixC").innerHTML = 0;
+}
+
 function removeElementsByClass(className){
     var elements = document.getElementsByClassName(className);
     while(elements.length > 0){
