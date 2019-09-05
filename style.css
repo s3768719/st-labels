@@ -84,6 +84,16 @@ select {
 	border-width:thin;
 	border-radius: 5px;
 }
+.full-box {
+	margin: 5px;
+	padding: 5px;
+	border-style: solid;
+	min-width: 300px;
+	max-width: 100%;
+	display: inline-block;
+	border-width:thin;
+	border-radius: 5px;
+}
 
 .smallButton {
 	border-radius: 3px;
