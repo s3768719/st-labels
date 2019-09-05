@@ -5,13 +5,6 @@
 	</head>
 	<body>
 		<h1 class="heading">Startrack  labels</h1>
-<!--
-		<div>
-			<button onclick="addLabel('prm')">PRM</button>
-			<button onclick="addLabel('exp')">EXP</button>
-			<button onclick="addLabel('mix')">MIX</button>
-		</div>
--->
 		<div class="full-width">
 			<div class="third-width">
 				<p>PRM</p>
@@ -34,5 +27,29 @@
 		</div>
 		<button onclick="printPage()">Print</button>
 		<button value="Refresh Page" onClick="window.location.reload();">Refresh</button>
+		<h1 class="heading">Multipart labels</h1>
+		<div class="full-width">
+			<div class="third-width">
+				<form id="multi-part">
+				Shipping Method:
+				<select id="ship" name="shipMethod">
+					<option value="">Select</option>
+					<option value="EPS">EPS</option>
+					<option value="EPE">EPE</option>
+					<option value="STS">STS</option>
+					<option value="STE">STE</option>
+				</select><br>
+				Parts:<input id="f1" type="number" name="numLabels"><br>
+				Order Number:<input id="f2" type="text" name="orderNumber"><br>
+				Customer Name:<input id="f3" type="text" name="custName"><br>
+				Address 1:<input id="f4" type="text" name="custAddr1"><br>
+				Address 2:<input id="f5" type="text" name="custAddr2"><br>
+				Phone:<input id="f6" type="text" name="custPhone"><br>
+				</form>
+			</div>
+		</div>
+		<button onclick="printMulti()">Print</button>
+		<div id="testBox">
+		</div>
 	</body>
 </html>

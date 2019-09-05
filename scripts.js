@@ -116,6 +116,7 @@ function removeElementsByClass(className){
 function printPage() {
 	
 	removeElementsByClass('box');
+	removeElementsByClass('tall-box');
 	
 	prmCount = parseInt(document.getElementById("prmC").textContent);
 	expCount = parseInt(document.getElementById("expC").textContent);
@@ -129,6 +130,35 @@ function printPage() {
 	}
 	for (var i = 0; i < mixCount; i++) {
 		addLabel('mix');
+	}
+	
+	window.print();
+}
+
+function printMulti() {
+	removeElementsByClass('tall-box');
+	removeElementsByClass('box');
+	var shipMethod = document.getElementById("ship").value;
+	var labelCount = document.getElementById("f1").value;
+	var orderNum = document.getElementById("f2").value;
+	var custName = document.getElementById("f3").value;
+	var addr1 = document.getElementById("f4").value;
+	var addr2 = document.getElementById("f5").value;
+	var phone = document.getElementById("f6").value;
+	
+	var pccg = "<span class='pccg'>From PC Case Gear<br>800 Wellington Road<br>Rowville 3178<br>Phone 03 9560 2122</span>";
+	var iText = pccg + "<span class='multi-text'>" + "<div class='right'>" + shipMethod +"</div><br>" + orderNum + "<br>" + custName + "<br>" + addr1 + "<br>" + addr2 + "<br>" + phone + "<br>";
+
+	//document.getElementById("testBox").innerHTML = text;
+	for (var i = 1; i < labelCount; i++) {
+	
+		var div = document.createElement('div');
+		var leftDiv = document.createElement('div');
+		document.body.appendChild(div);
+		//document.div.appendChild(leftDiv);
+		div.classList.add("tall-box");
+		//leftDiv.classList("leftBox");
+		div.innerHTML = iText + "<div class='right bottom'>" + (i+1) + "|" + labelCount + "</div></span>";		
 	}
 	
 	window.print();

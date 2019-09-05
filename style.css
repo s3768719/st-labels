@@ -7,6 +7,49 @@ h1 {
 	
 }
 
+.pccg {
+	float:left;
+	width:90%;
+	height:auto;
+	text-align: left;
+	border-style: solid;
+	border-width: thin;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding:5%;
+}
+
+.multi-text{
+	float:left;
+	width:90%;
+	height:340px;
+	text-align: left;
+	border-style: solid;
+	border-width: thin;
+	margin: 5px;
+	padding:5%;
+	position: relative;
+}
+
+.right {
+	text-align:right;
+}
+.left {
+	text-align:left;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+form {
+	float: left;
+	text-align: left;
+}
+input {
+	float: right;
+}
 button {
 	border-radius: 5px;
 	width: 90px;
@@ -23,6 +66,7 @@ button:hover {
 
 select {
 	width: 10ex;
+	float: right;
 }
 
 .full-width {
@@ -57,6 +101,16 @@ select {
 	border-width: medium;
 	width:200px;
 	height: 200px;
+	float: left;
+	display: none;
+}
+.tall-box {
+	font-size: 10px;
+	border-style: solid;
+	padding:10px;
+	border-width: medium;
+	width:99px;
+	height: 199px;
 	float: left;
 	display: none;
 }
@@ -95,6 +149,17 @@ select {
 		border-width: medium;
 		width:570px;
 		height: 300px;
+		float: none;
+		page-break-after: always;
+	}
+	.tall-box {
+		display: block;
+		font-size: 18px;
+		border-style: solid;
+		padding:25px;
+		border-width: medium;
+		height: 510px;
+		width:300px;
 		float: none;
 		page-break-after: always;
 	}
