@@ -152,7 +152,7 @@ function printMulti() {
 	var addr2 = document.getElementById("f5").value;
 	var phone = document.getElementById("f6").value;
 	
-	var pccg = "<span class='pccg'>From PC Case Gear<br>800 Wellington Road<br>Rowville 3178<br>Phone 03 9560 2122</span>";
+	var pccg = "<span class='pccg'>From PC Case Gear<br>800 Wellington Road<br>Rowville VIC 3178<br>Phone 03 9560 2122</span>";
 	var iText = pccg + "<span class='multi-text'>" + "<div class='right'>" + shipMethod +"</div><br>" + orderNum + "<br>" + custName + "<br>" + addr1 + "<br>" + addr2 + "<br>" + phone + "<br>";
 
 	//document.getElementById("testBox").innerHTML = text;
