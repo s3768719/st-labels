@@ -156,7 +156,13 @@ function printMulti() {
 	var iText = pccg + "<span class='multi-text'>" + "<div class='right'>" + shipMethod +"</div><br>" + orderNum + "<br>" + custName + "<br>" + addr1 + "<br>" + addr2 + "<br>" + phone + "<br>";
 
 	//document.getElementById("testBox").innerHTML = text;
-	for (var i = 1; i < labelCount; i++) {
+	var check = document.getElementById("p1").checked;
+	if(check) {
+		var c = 0;
+	} else {
+		var c = 1;
+	}
+	for (var i = c; i < labelCount; i++) {
 	
 		var div = document.createElement('div');
 		var leftDiv = document.createElement('div');
