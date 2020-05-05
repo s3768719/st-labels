@@ -5,25 +5,31 @@
 	</head>
 	<body>
 		<!-- TODO insert auspost mixed -->
-		<h1 class="heading">Startrack  labels</h1>
+		<h1 class="heading">LABELS</h1>
 		<div class="full-width">
 			<div class="third-width">
-				<p>PRM</p>
+				<p class="labelName">PRM</p>
 				<button class="smallButton" onclick="up('prm')">+</button>
 				<p id="prmC">0</p>
 				<button class="smallButton" onclick="down('prm')">-</button>
 			</div>
 			<div class="third-width">
-				<p>EXP</p>
+				<p class="labelName">EXP</p>
 				<button class="smallButton" onclick="up('exp')">+</button>
 				<p id="expC">0</p>
 				<button class="smallButton" onclick="down('exp')">-</button>
 			</div>
 			<div class="third-width">
-				<p>MIX</p>
+				<p class="labelName">MIX</p>
 				<button class="smallButton" onclick="up('mix')">+</button>
 				<p id="mixC">0</p>
 				<button class="smallButton" onclick="down('mix')">-</button>
+			</div>
+			<div class="third-width">
+				<p class="labelName">Auspost Mix</p>
+				<button class="smallButton" onclick="up('apm')">+</button>
+				<p id="apmC">0</p>
+				<button class="smallButton" onclick="down('apm')">-</button>
 			</div>
 		</div>
 		<button onclick="printPage()">Print</button>

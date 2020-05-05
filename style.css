@@ -3,8 +3,13 @@ html {
 	text-align: center;
 }
 
-h1 {
-	
+.labelName {
+	margin: 2px 2px 10px 2px;
+}
+
+.largeHeading {
+	margin: 0;
+	font-size: 50px;
 }
 
 .pccg {
